@@ -1,2 +1,9 @@
-# #  Hola Soy Enaldo 👋 , pero la mayoria me llama Espino... creo que se les hace más facil aprender mi apellido ! https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>
-  
+# #  Hola Soy Enaldo 👋 , pero la mayoria me llama Espino...
+
+Soy estudiante de Lic. Ingenieria Mecatrónica de la Universidad Latina de Panamá.
+
+
+Si estas por aca, es porque estas interesado en mis investigaciones y mi lenguaje de programación, la cual puede ayudarte a solucionar algun tipo de problema que se te aparezca.
+
+
+Sin más, pues comencemos!!!!!🤝
