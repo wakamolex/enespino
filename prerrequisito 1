@@ -1,0 +1,37 @@
+print(3 + 2)
+
+print(4 - 9)
+
+print(2.2*7.45)
+
+print(4/5)
+
+print(4**3)
+
+print(3%2, -9%4) 
+
+print(16//7)
+
+print(12^1)
+
+print(3/4)
+
+print(4/2)
+
+print(2 + 0.5)
+
+print(type(2))
+
+print(type(4.2))
+
+print(int(20.2))
+
+print(float(40))
+
+print(0.3+ 0.3 + 0.3)
+
+print(type('2'))
+
+print(type(2))
+
+print(type(2.0))
