@@ -1,397 +1,396 @@
-# Escriba una expresion que calcule el promedio de...
-# 30, 16, 40
-a =((30 + 16 + 40)/3)
-print('Resultado esperado: ')
-print(a)
+dia = 15
+if dia == 15:
+    print('Ejecutar cobro')
+    
+dia = 2
+if dia == 15:
+    print('Ejecutar cobro')
 
-b = ((6*2) + (2.8*2))
-c = (0.5 * 12)
-d = b/c
-print (round(d))
+dia = 84
+if dia >= 1 and dia < 500:
+    print('Pacora')
+if dia > 500 and dia < 1000:
+    print('Las Cumbres')
+if dia > 1000 and dia < 3000:
+    print('El Dorado')
+if dia > 3000 and dia < 5000:
+    print('San Francisco')
+if dia > 5000:
+    print('Altos del Maria')
 
-# un recipiente cilindrico de agua tiene (en pie cubicos)
-recipiente1 = 1e3
-# Se tiene otro recipiente de agua (in cubic metres)
-recipiente2 = 1.8e3
 
-# haga las siguientes operaciones
-# decremente la variable del recipiente 2 al 20%
-recipiente2 = recipiente2*0.8
-# añada la variable de recipiente 1 a recipiente 2
-recipiente2 = recipiente1 + recipiente2
-# incremente el volumen del recipiente 1 al 5%
-recipiente1 = (recipiente1*0.05) + recipiente1
-# decremente el recipiente 1 por 15%
-recipiente1 = recipiente1 - (recipiente1*0.15)
-# decremente el 0.3% del recipiente 1, 
-recipiente1 = recipiente1 - (recipiente1*0.003)
-# decremente el 1% del recipiente2
-recipiente2 = recipiente2 - (recipiente2*0.01)
-# sume ambas variables en el recipiente1
-recipiente1 = recipiente1 + recipiente2
-# imprima el nuevo valor de las variables
-print('Resultado esperado: ', recipiente1, recipiente2)
+respuesta = 7# provea un numero
+numero    = 4# el numero que ud eligio
 
-print(3+2.5)
+if numero > respuesta: #condicional para entrar el siguiente codigo
+    resp = 'Te fuiste muy arriba'
+if numero < respuesta: #condicional para entrar al siguiente codigo
+    resp = 'Te fuiste muy abajo'
+if numero == respuesta: #condicional que evalua respuesta correcta
+    resp = 'Ese es el numero, atinaste'
+    
+print(resp)
 
-print(int(3+2.5))
+salario = 45000
 
-print(2 + float(2))
+if salario > 900:
+	seguro_social = salario*0.0975
+	seguro_educativo = salario*0.0125
+	print("El seguro social es de: " + str(seguro_social) + " El seguro educativo es de: " + str(seguro_educativo))
+if salario < 900:
+	print("No se le descuenta seguro")
 
-print(2+2)
 
-print(type(2+2.0))
+edad = 24
+if 18 < edad <= 40:
+    print('Usted es un adulto joven')
 
-tengoHambre = True
+w = 0.8
+h = 1.7
+if 2.5 > h/w > 1.5:
+    print('Ud es normal y no sufre de gigantismo')
 
-print(tengoHambre)
+haveCar = True
+haveGas = True
+if haveCar and haveGas:
+    print('Puedo pasear en auto')
 
-tengoCOVID = False
+haveSkills = True
+knowPython = True
+partTime   = False
+LiveIn     = 'PANAMA'
+problematic = False
+teamwork   = 0.7
+if haveSkills and knowPython and (LiveIn == 'PANAMA' or LiveIn == 'COLON') and (not problematic and teamwork > 0.65):
+    print('El candidato encaja en el perfil')
 
-print(tengoCOVID)
 
-print(10 > 2)
+    tiempo = 10
+    distancia = 0.5
+    velocidad = 0.2
 
-print(2.2 > 2.2)
+    if 10 > tiempo > 1 and velocidad*tiempo > 4 and distancia > 0.2 and tiempo and (not(velocidad/t**2 > 0.1) or distancia < 1 ) and (velocidad*tiempo > 0.5 or distancia/tiempo > 10):
+    	print("Se choco")
+### problema de robot choque y otras vainas
 
-a = 0.3
-b = 0.1 + 0.1 + 0.1
+algunas_provincias = ['PanAma', 'ColOn', 'DArien', 'VerAguas', 'ChIriqui', 'HErrera', 'LOs SAntOs']
 
-print(a == b)
+for provincia in algunas_provincias:
+    print(provincia.upper())
 
-print(a != b)
 
-tengoSed = True
+    algunas_provincias = ['PanAma', 'ColOn', 'DArien', 'VerAguas', 'ChIriqui', 'HErrera', 'LOs SAntOs']
+en_mayusculas = []
+for provincia in algunas_provincias:
+    en_mayusculas.append(provincia.upper())
 
-yaComi = False
+print(en_mayusculas)
 
-esVerdad = False
+print(range(10))
 
-print(tengoSed and yaComi and esVerdad)
+for n in range(10):
+    print(n)
 
-print(tengoSed or yaComi or esVerdad)
+    algunas_provincias = ['PanAma', 'ColOn', 'DArien', 'VerAguas', 'ChIriqui', 'HErrera', 'LOs SAntOs']
+for provincia_num in range(len(algunas_provincias)):
+    algunas_provincias[provincia_num] = algunas_provincias[provincia_num].lower()
+    
+print(algunas_provincias)
 
-print(tengoSed and not yaComi and not esVerdad)
 
-# temperatura de pais vs área de estudio
-tempPTY, areaPTY = 38.5, 102
-tempCOL, areaCOL = 29.2, 150
 
-# temp/m2
-tempm2_pty = tempPTY/areaPTY
-tempm2_col = tempCOL/areaCOL
 
-# escriba el restante de código que indica si la temp/m2 de pty es mayor a la temp/m2 de col
+table_periodica = ['na', 'br', 'ca', 'cu', 'au', 'nd', 'ag']
 
-print('Resultado esperado: ', tempm2_pty > tempm2_col)
+for n in range(len(table_periodica)):
+	table_periodica[n] = table_periodica[n].capitalize()
 
-#¿Porqué en Python para comparar no podemos utilizar = sino ==? 
-#porque = es para asignar un valor a una variable y el == sirve para compara 2 valores
 
-print('a', "hola")
+print(table_periodica)
 
-print('Nos veremos "tentativamente" a las 1:00p.m. hoy miércoles')
+trabalenguas = ['Por', 'desenredar', 'el', 'enredo', 'que', 'ayer', 'enredé.', 'Hoy', 'enredo',
+                'el', 'desenredo', 'que', 'desenredé', 'ayer.']
+respu = ''
+for n in range(len(trabalenguas)):
+	respu = respu + trabalenguas[n] + ' '
 
-print('"Nos veremos \"tentativamente\" a las 1:00p.m. hoy miércoles"')
+print(respu)
 
+fact = 6
+factorial = 1
+for n in range(factorial, 7):
+	factorial = factorial * n
 
-inicio = 'Inteligencia Artificial'
+print(factorial)
 
-final = 'para Internet de Cosas'
 
-print(inicio + ' ' + final)
+num = 0
+for n in range(31):
+	num = num + n
 
-print(inicio*10)
+print(num)
 
-data = "0123456789"
+nombres = [
+    'Himura Kenshin',
+    'Kamiya Kaoru',
+    'Myōjin Yahiko',
+    'Sagara Sanosuke',
+    'Takani Megumi',
+    'Shinomori Aoshi',
+    'Saitō Hajime',
+    'Makimachi Misao'
+]
+nombresfinal= []
+for n in range(len(nombres)):
+    nombres[n] = nombres[n].lower()
+    nombres[n] = nombres[n].replace(" ", "-")
+    print(nombres[n])
 
-print(len(data))
+numeros = {0:'cero', 1:'uno', 2:'dos', 3:'tres', 4:'cuatro', 5:'cinco',
+           6:'seis', 7:'siete', 8:'ocho', 9:'nueve', 10:'diez'}
 
-# TODO:  Arregle lo que está mal
+for num in numeros:
+    print(num)
 
-quote = 'Ser-O-No-'"Ser"'-'"He allí"'-El Dilema'
+for key, val in numeros.items():
+    print(key, val)
 
-# LA RESPUESTA ESPERADA DEBE SER:  Ser-O-No-Ser-He allí-El Dilema
-print(quote)
+for key in numeros.keys():
+    print(key)
 
-fruta = 25
+for val in numeros.values():
+    print(val)
 
-vegetales = 12
 
-total_fruta_y_vegetal = fruta + vegetales
+edades = {'Juan':10, 'Javier': 4, 'Jonas':8, 'Nuria': 20, 'Edith': 18, 'Ana':14}
 
-print('Resultado esperado ', total_fruta_y_vegetal, ' y tipo ', type(total_fruta_y_vegetal) )
+edadtot = 0
+for n in edades.values():
+    edadtot = edadtot + n
 
-username = 'Ignacio'
+print(edadtot)
 
-ts = "04:50"
+numeros = [1, 4, 9, 10, 120, 22, 43]
+reversal = []
+while len(numeros):
+    reversal.append(numeros.pop())
 
-url = "http://minegocio.com/id/nmasaya/me"
 
-print(username + " exited the url " + url + " at " + ts)
-# TODO: imprimir un mensaje como que se muestra a continuación
+print(reversal)
 
-nombre = "Juan"
+valor = 1
+n = 1
 
-seg_nombre = "Javier"
+while n < 7:
+    valor = valor*(n)
+    n += 1
 
-apellido = "Jimenez"
+print(valor)
 
-# calcular el largo del nombre
-name_length = len(nombre + seg_nombre + apellido)# como asi????
 
-# Ahora que calculó el largo del nombre intente  ver si cabe en la licencia
-driving_license_character_limit = 28
+##lista
+lista = list(range(16))
+num = []
+n = 0
+n1 = 0
+while n < len(lista):
+    if lista[n] % 2 == 1:
+        num.append(lista[n])
+    n += 1
+while n1 < len(num):
+    print(num[n1])
+    n1 += 1
 
-print(name_length <= driving_license_character_limit)
+num = 456
+n = 0
+final = 0
+while final < num:
+    n += 1
+    final = 0
+    final = n**2
 
-print(type(True))
+print('El número más cercano es {}'.format(str(n-1)))
 
-ctr = int(4.0)
 
-print(ctr)
+# item, peso (kg)
+items = [('frutas', 320), ('vegetales', 655), ('jugetes', 880), ('cereales', 375), 
+         ('detergente', 450), ('hogar', 200), ('farmacia', 499), ('papel', 1000), ('otros', 932)]
 
-print(type(ctr))
+contenedor = []
+total_weight = 0
+for item in items:
+    name, weight = item
+    if weight > 500:
+        continue # no cargar al contenedor
+    else:
+        total_weight += weight              
+        contenedor.append(name)
 
-casa = 13
+    
+print(f'Cargamos al contenedor {contenedor} y el peso total de la mercancia es {total_weight} kg')
 
-direccion = 'Ave Tesseract-Midgard'
 
-provincia = 'Zanakard'
-print(type(casa))
+contenedor = []
+total_weight = 0
+for item in items:
+    name, weight = item
+    total_weight += weight        
+    if total_weight >= 3750:
+        total_weight -= weight
+        break # no cargar más de la capacidad máxima
+    else:              
+        contenedor.append(name)
 
-print(type(direccion))
+print(f'Cargamos al contenedor {contenedor} y el peso total de la mercancia es {total_weight} kg')
 
-full_dir = str(casa) + ' ' + direccion + ', ' + provincia
 
-print(full_dir)
+contenedor = []
+total_weight = 0
+for item in items:
+    name, weight = item
+    total_weight += weight        
+    if total_weight >= 3750:
+        total_weight -= weight
+        print(f'\n**carga total al final del ciclo {total_weight}**')        
+        break # no cargar más de la capacidad máxima
+    else:  
+        print(f'cargando {name}, peso actual {total_weight}')
+        contenedor.append(name)
 
+print(f'\nCargamos al contenedor {contenedor} y el peso total de la mercancia es {total_weight} kg')
 
-print(type("12"))
 
-print(type(12.3))
+ufc_champions = ['Stipe Miocic', 'Israel Adesanya', 'Kamaru Usman', 'Khabib Nurmagomedov',
+                 'Justin Gaethje', 'Alexander Volkanovski', 'Petr Yan', 'Deiveson Figueiredo']
 
-print(type(len('i am a string')))
+ufc_champions_short = ['Israel Adesanya', 'Khabib Nurmagomedov', 'Justin Gaethje', 'Deiveson Figueiredo']
 
-print('inteligencia artificial'.title())
+count = 0
+for champ in ufc_champions:
+    if champ not in ufc_champions_short:
+        print('No fue encontrado este campeon')
+        continue
+    else:
+        count = count + 1
+        print(f'Contado el campeon {champ}')
+        
+print('Total de campeones encontrados ->', count)
 
-materia = 'INTELIGENCIA ARTIFICIAL'
 
-print(materia.islower())
+palabras = ['Cretino', 'Vida mía', 'Baboso', 'Bocachancla','Cielo', 'Cielito', 'Mi vida', 'Mi luz', 
+            'Luz de mis ojos', 'Bebecita', 'Cariño', 'Papacito', 'Zoquete', 'Cariño mío', 'Patan', 'Cari', 
+            'Corazón', 'Mi rey', 'Lerdo','Osito', 'Bombón', 'Charlatan', 'Dulzura', 'Galletita', 
+            'Fanfarrón']
+ofensas = ['Baboso', 'Bocachancla', 'Charlatan', 'Cretino', 'Fanfarrón', 'Lerdo', 'Patan', 'Zoquete']
 
-print('Abaco 3 Casas 4 Peces 3 Cadenas tres veces treinta y tres veces'.count('tres'))
+count = 0
+for piropos in palabras:
+    if piropos not in ofensas:
+        piropos2 = piropos
+        print(piropos2)
+        continue
 
-print("3.2".islower())
 
-print("12123".isnumeric())
 
-x = 2
-y = 3
 
-print(f'{x} {x} {y} ')
+item = ['frutas', 'vegetales', 'juguetes', 'cereales', 'detergente', 'hogar', 'farmacia', 'papel', 'otros']
+peso = [320, 655, 880, 375, 450, 200, 499, 1000, 932]
 
 
-print("Hello {var1} {var2}".format(var1 = "Python", var2 = "Rules"))
+print(list(zip(item, peso)))
 
-materias = ["Robotica", "IA", "Control", "Tecnologia Mecanica"]
+#same as below comments
+#elementos = zip(item, peso)
+#for item, peso in elementos: # same as below
+for n, w in zip(item, peso):
+    print(n, w)
 
-print(materias[0], materias[2], materias[-1])
 
-valores = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+elementos = zip(item, peso)
+item, peso = zip(*elementos)
 
-primeros_tres = valores[:3]
-print(primeros_tres)
-primeros_tres = valores[0:3]
-print(primeros_tres)
+print(item)
+print(peso)
 
-ultimos_tres = valores[5:]
-print(ultimos_tres)
-ultimos_tres = valores[5:8]
-print(ultimos_tres)
+for i, elemento in zip(range(len(items)), item):
+    print(i, elemento)
 
-intermedio = valores[2:6]
-print(intermedio)
 
-calificacion = 'Su calificación aprueba el curso'
-items = ['Pasta', 'Cepillo', 'Bolsa de Basura']
+for i, elemento in enumerate(item):
+    print(i, elemento)
 
-print(len(calificacion))
-print(len(items))
 
-print(calificacion[1:18])
+x0 = [0, 1, -2, 14, -5, 4, 5]
+x1 = [1, 3, 5, 7, 9, 11, 13]
+x2 = [2, 4, 6, 8, 10, 12, 14]
+letras = ['A', 'B', 'C', 'D', 'F', 'E', 'F']
 
-mi_lista = 'Estaremos a la una de la tarde para las clases'
-print('ar' in mi_lista)
+xa = zip(x0, x1, x2)
+xb = zip(letras, xa)
+#xc = zip(xa, xb)
+for xa, var1, in zip(range(len(letras)), xb):
+    print(var1) 
 
-nombres = ['Maria', 'Ana', 'Estela', 'juan']
-print('Juan' in nombres, 'Juan' not in nombres)
+tup = ((1,-1), (2,-2), (3,-3), (4,-4), (5,-5))
 
-n = ['xwb', 'abc', 'def']
-print(n)
-n[0] = 'wxy'
-print(n)
+pos , neg = zip(*tup)
 
-mes = 8
-dias_del_mes = [31,28,31,30,31,30,31,31,30,31,30,31]
+print(pos)
+print(neg)
 
-# Use indexing para determinar el número de días en el mes 8
-num_dias =  dias_del_mes[mes-1]
-print(num_dias)
+matriz5x4 = (( 1, 2, 3, 4),
+            ( 5, 6, 7, 8),
+            ( 9,10,11,12),
+            (13,14,15,16),
+            (17,18,19,20))
 
-dias = ['Feb 8, 1980', 'Dic 8, 1949', 
-        'Mar 20, 1492', 'Abril 12, 1999',
-        'Jun 12, 2010']
-                 
-# Imprima los ultimos tres elementos de la lista
-print(dias[2:])
+matriz4x5 = [] 
+splitmat = zip(*matriz5x4)
+matriz4x5 = [list(var2) for var2 in splitmat]
+print(matriz4x5)
 
-p1 = "Quisiera que se terminara la materia" 
 
-p2 = ["Quisiera", "que", "se", "terminara", "la", "materia"]
 
-print(p2[4])
-print(p2[0])
-print(p1[30])
-print(p2[0:2])
+a = ['H. Montana', 'E. Hurley']
+b = [40, 60]
+y = zip(a,b)
+for x, y in enumerate(y):
+    print(y)
 
-nombre = 'Coimbra'
-jugador = nombre
-nombre = 'Pepe'
-print(nombre)
-print(jugador)
+twilight = ['Bella Swan', 'Edward Cullen', 'Jacob Black', 'Charlie Swan',
+            'Carlisle Cullen', 'Esme Cullen', 'Alice Cullen']
+for x, twilight in enumerate(twilight):
+    print(twilight, x)
 
-lista_1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-lista_2 = lista_1
-lista_1[3] = 'j'
-print(lista_1)
-print(lista_2)
+algunas_provincias = ['PanAma', 'ColOn', 'DArien', 'VerAguas', 'ChIriqui', 'HErrera', 'LOs SAntOs']
+en_mayusculas = []
+for provincia in algunas_provincias:
+    en_mayusculas.append(provincia.upper())
 
-lista_1 = [2, 14, 20, -1, -5, 4]
+print(en_mayusculas)
 
-print(max(lista_1))
+en_mayusculas = [provincia.upper() for provincia in algunas_provincias]
+print(en_mayusculas)
 
-lista_2 = ['Aries Mu', 'Cygnus Hyoga', 'Pegasus Seiya', 'Pegasus Tenma', 'Sagitarius Aiolos', 'Libra Dohko']
-print(max(lista_2))
+# con for loop
+x = []
+for i in range(10):
+    x.append(i**3)
+print(x)
+    
+# con listas de comprensión
+x = [i**3 for i in range(10)]
+print(x)
 
-numbers = [24, 48, 54, 65, 24, 12, 1]
-print(sorted(numbers))
+# solo listar de los numeros que son pares su valor al cubo
+x = [i**3 for i in range(10) if i%2 == 0]
+print(x)
 
-days_of_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-print(sorted(days_of_week, reverse=True))
+x = [i**3 if i%2 == 0 else i for i in range(10)]
+print(x)
 
-print("-".join(['No', 'te', 'voy', 'a', 'decir']))
 
-print("-".join(['No' 'te' 'voy' 'a' 'decir']))
-
-a = ['1', '2', '3']
-a.append('5')
-print(a)
-
-a = [1, 5, 8]
-b = [2, 6, 9, 10]
-c = [100, 200]
-
-print(max([len(a), len(b), len(c)]))
-print(min([len(a), len(b), len(c)]))
-
-names = ["Uno", "Dos", "Tres", "Cuatro"]
-print(" & ".join(sorted(names)))
-
-names = ["Norberto", "Ignacio", "Luis", "Tito"]
-names.append("Armando")
-print(sorted(names))
-
-
-lat_long = (24.21254, 145.04011)
-
-print(lat_long)
-print('La latitud  es: {}'.format(lat_long[0]))
-print('La longitud es: {}'.format(lat_long[1]))
-
-tesseract = 12, 14, 20, 34
-D1, D2, D3, D4 = tesseract
-print('Las dimensiones del tesseract son {}x{}x{}x{}'.format(D1,D2,D3,D4))
-print(f'Las dimensiones del tesseract son {D1}x{D2}x{D3}x{D4}')
-
-
-tuple_a = 2, 8
-tuple_b = (8, 2)
-
-print(tuple_a == tuple_b)
-print(tuple_a[1])
-
-nombres = ['Ana', 'Gabriel', 'Juan', 'Laura', 'Roberto', 'Laura', 'Nestor', 'Ana', 'Cecibel']
-print(nombres, len(nombres))
-print(set(nombres), len(set(nombres)))
-
-my_set = set([1, 2, 4, 5, 19, 20])
-print(my_set)
-my_set.add(-1)
-print(my_set)
-my_set.pop()
-print(my_set)
-
-a = [1, 2, 2, 4, 4, 4, 8, 8, 8, 8]
-b = set(a)
-print (b)
-print(len(a) - len(b))
-
-a = [0, -1, -1, 2, 1, 2, 7, 9, 12, 15]
-b = set(a)
-b.add(111)
-b.pop()
-print(b)
-
-
-my_dict = {'January':1, 'February':2, 'March':3}
-
-print(my_dict['February'])
-print(my_dict)
-
-my_dict = {'January':1, 'February':2, 'March':3, 'April':4, 'May':5, 'June':6, 'July':7, 
-           'August':8, 'September':9, 'October':10, 'November':11, 'December':12}
-print(my_dict)
-print('Monday' in my_dict)
-
-print(my_dict.get('September'))
-print(my_dict.get('Monday'))
-#print(my_dict['Monday'])
-
-mes = my_dict.get('Monday')
-not_null = mes is not None
-print(not_null)
-
-diccio = {'Panama':5.9, 'Costa Rica':6.2, 'Colombia':8.4, 'Mexico':1.2}
-print(diccio)
-
-diccionario2 = {'Panama':8, 'Los Santos':7, 'Herrera':6, 'Colon':3}
-#print(diccionario2['Veraguas'])
-
-items = {
-'harina': [20, 10, 15, 8, 32, 15],
-'carne': [3,4,2,8,2,4],
-'pan': [2, 3, 3],
-'cc': [0.3, 0.5, 0.8, 0.3, 1]
-}
-print(items['harina'][2])
-print(items['carne'][2])
-print(items['pan'][2])
-print(items['cc'][2])
-
-datos = {'Ana':{'edad':24, 'peso':110, 'sexo':'F', 'estudiante':True},
-         'Javi':{'edad':12, 'peso':90, 'sexo':'M', 'estudiante':False}}
-print(datos)
-print(datos.get('Javi'))
-print(datos.get('Juan'), 'No existe Juan')
-
-print(datos['Javi']['peso'])
-
-print(datos['Ana']['estudiante'])
-
-print(datos['Javi']['estudiante'])
-
-
-conquistadores = ['Vasco Núnez de Balboa', 'Luis de Moscoso Alvarado', 'Juan de Cárdenas'
+conquistadores = ['Vasco Núnez de Balboa', 'Luis de Moscoso Alvarado', 'Juan de Cárdenas',
                   'Pedro de Heredia', 'Gutierre de Miranda', 'Juan de Salcedo']
 
 lista = [x.split()[0] for x in conquistadores]
