@@ -1,0 +1,87 @@
+radio = float(input('Ingrese el radio:'))
+volumen = (4/3)*(3.14*(radio**3))
+print("El volumen de la esfera es: "+ str(round(volumen,1)) + " m^3")
+
+
+
+while  True:
+	try:
+		dividendo = int(input('Ingrese un dividendo:'))
+		divisor = int(input('Ingrese un divisor:'))
+		resultado = dividendo/divisor
+		break
+	except ZeroDivisionError:
+		print("Divisor no puede ser 0")
+
+print("El resultado es " + str(resultado))
+
+import os
+
+n = 8
+path = os.path.join('files', 'bookstore.txt')
+with open(path, 'r') as f:
+	for i, line in enumerate(f):
+		if i == n - 1:
+			print(line)
+
+
+with open(path, 'r') as f:
+	for i in f:
+		print(i)
+
+
+div = []
+fechas = []
+filt = []
+path = os.path.join('files', 'dates.txt')
+archivo = open(path, 'r')
+with open(path, 'r') as f:
+	for i in f:
+		div.append(i.split("\t"))
+
+for i in div[3:8]:
+	filt.append(i[2])
+	print(i[2])
+
+path = os.path.join('files', 'filter.txt')
+with open(path, 'w') as f:
+	for j in filt:
+		f.write(j + "\n")
+class Ropa:
+    def __init__(self, color='rojo', talla='S', estilo='camisa', precio=0):
+        self.color=color
+        self.talla=talla
+        self.estilo=estilo
+        self.precio=precio
+        
+    def cambiar_precio(self, precio):
+        self.precio=precio
+        
+    def cambiar_talla(self, talla):
+        self.talla=talla
+
+
+ropa_mujer = Ropa(estilo='falda', precio=10, talla='S', color='azul')
+print(ropa_mujer.color)
+
+print(ropa_mujer.precio)
+
+ropa_mujer.cambiar_precio(1)
+print(ropa_mujer.precio)
+
+ropa_hombre = Ropa('verde', 'XL', 'pantalon', 20)
+print(ropa_hombre.talla)
+
+ropa_hombre.cambiar_talla('M')
+print(ropa_hombre.talla)
+
+cliente = Ropa()
+print(cliente.talla, cliente.precio, cliente.estilo)
+
+import Class.pow2 as num
+
+val = num.Pow2(3)
+
+print(val.pow2())
+print(val.mod2())
+print(val.pow3())
