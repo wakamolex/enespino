@@ -389,3 +389,22 @@ print(datos['Javi']['peso'])
 print(datos['Ana']['estudiante'])
 
 print(datos['Javi']['estudiante'])
+
+
+conquistadores = ['Vasco Núnez de Balboa', 'Luis de Moscoso Alvarado', 'Juan de Cárdenas'
+                  'Pedro de Heredia', 'Gutierre de Miranda', 'Juan de Salcedo']
+
+lista = [x.split()[0] for x in conquistadores]
+print(lista)
+
+
+y = [2**(2**i) + 1 for i in range(10)]
+print(y)
+
+
+major_league_players = {'Mel Allen':1978, 'Red Barber':1978, 'Jerry Coleman':2005,
+          'Joe Garagiola, Sr.':1991, 'Curt Gowdy':1984, 'Ken Harrelson':2020,
+          'Al Helfer':2019, 'Russ Hodges':1980}
+
+player = [i for i in major_league_players if major_league_players[i] >= 1980 and major_league_players[i] <= 2015]
+print(player)
